@@ -8,14 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewModel = MatchesViewModel()
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            VStack(spacing: 0) {
+                HStack {
+                    Text("Partidas")
+                        .foregroundColor(.white)
+                        .font(.headingFont)
+                        .padding([.leading, .bottom], 24)
+                } . frame(maxWidth: .infinity, alignment: .leading)
+                ScrollView {
+                    VStack(spacing: 23) {
+                        ForEach(viewModel.matches, id: \.self) { match in
+                            NavigationLink(destination: DetailsView(match: match)){
+                                MatchCardView(match: match)
+                            }
+                        }
+                    }
+                }.scrollIndicators(.never)
+                    .onAppear {
+                        UITableView.appearance().separatorStyle = .none
+                        viewModel.getHomeData()
+                    }
+            }.background(Color.backgroundColor)
+                .preferredColorScheme(.dark)
         }
-        .padding()
     }
 }
 

@@ -32,7 +32,6 @@ class NetworkManager {
                 return promise(.failure(NetworkError.invalidURL))
             }
             url.append(queryItems: queryItems)
-            print("URL is \(url.absoluteString)")
             var request = URLRequest(url: url)
              request.addValue("Bearer FKIEYAHcGipybNewRe2a3SdRjkO3gfLxGNHfAPAdZbEQYEFydMA", forHTTPHeaderField: "authorization")
             request.addValue("application/json", forHTTPHeaderField: "accept")

@@ -20,9 +20,9 @@ class MatchesViewModel: ObservableObject {
             .sink { completion in
                 switch completion {
                 case .failure(let err):
-                    print("Error is \(err.localizedDescription)")
+                    debugPrint("Error is \(err.localizedDescription)")
                 case .finished:
-                    print("Finished")
+                    debugPrint("Finished")
                 }
             }
             receiveValue: { [weak self] matchesData in
