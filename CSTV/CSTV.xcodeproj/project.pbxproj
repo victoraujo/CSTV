@@ -13,6 +13,10 @@
 		13B03C1929D85F900096ECD3 /* Opponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B03C1829D85F900096ECD3 /* Opponents.swift */; };
 		13B03C1B29D863170096ECD3 /* Serie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B03C1A29D863170096ECD3 /* Serie.swift */; };
 		13B03C1D29D867500096ECD3 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B03C1C29D8674F0096ECD3 /* Match.swift */; };
+		13E14ACD29DBD1E300D96760 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13E14ACA29DBD1E200D96760 /* Roboto-Regular.ttf */; };
+		13E14ACE29DBD1E300D96760 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13E14ACB29DBD1E300D96760 /* Roboto-Bold.ttf */; };
+		13E14ACF29DBD1E300D96760 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13E14ACC29DBD1E300D96760 /* Roboto-Medium.ttf */; };
+		13E14AD229DBD2AF00D96760 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E14AD129DBD2AF00D96760 /* FontExtension.swift */; };
 		13F315DF29D78908003770BD /* CSTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F315DE29D78908003770BD /* CSTVApp.swift */; };
 		13F315E129D78908003770BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F315E029D78908003770BD /* ContentView.swift */; };
 		13F315E329D7890D003770BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13F315E229D7890D003770BD /* Assets.xcassets */; };
@@ -21,12 +25,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		133790CE29DCC9D000D5F30E /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		1383CD4229D79F2B00D60C66 /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
 		138A42EE29D9EB0C004E7631 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		138A42F029D9EB92004E7631 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		13B03C1829D85F900096ECD3 /* Opponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opponents.swift; sourceTree = "<group>"; };
 		13B03C1A29D863170096ECD3 /* Serie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serie.swift; sourceTree = "<group>"; };
 		13B03C1C29D8674F0096ECD3 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		13E14AC729DBC4D900D96760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		13E14ACA29DBD1E200D96760 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		13E14ACB29DBD1E300D96760 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		13E14ACC29DBD1E300D96760 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		13E14AD129DBD2AF00D96760 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		13F315DB29D78908003770BD /* CSTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13F315DE29D78908003770BD /* CSTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTVApp.swift; sourceTree = "<group>"; };
 		13F315E029D78908003770BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +56,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13E14AD029DBD1ED00D96760 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				13E14ACB29DBD1E300D96760 /* Roboto-Bold.ttf */,
+				13E14ACC29DBD1E300D96760 /* Roboto-Medium.ttf */,
+				13E14ACA29DBD1E200D96760 /* Roboto-Regular.ttf */,
+				133790CE29DCC9D000D5F30E /* Roboto-Light.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		13F315D229D78907003770BD = {
 			isa = PBXGroup;
 			children = (
@@ -65,7 +86,9 @@
 		13F315DD29D78908003770BD /* CSTV */ = {
 			isa = PBXGroup;
 			children = (
+				13E14AC729DBC4D900D96760 /* Info.plist */,
 				13F315DE29D78908003770BD /* CSTVApp.swift */,
+				13E14AD029DBD1ED00D96760 /* fonts */,
 				13F315EE29D79D9D003770BD /* Models */,
 				13F315E029D78908003770BD /* ContentView.swift */,
 				13F315E229D7890D003770BD /* Assets.xcassets */,
@@ -154,7 +177,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13E14ACF29DBD1E300D96760 /* Roboto-Medium.ttf in Resources */,
+				13E14ACD29DBD1E300D96760 /* Roboto-Regular.ttf in Resources */,
+				133790CF29DCC9D100D5F30E /* Roboto-Light.ttf in Resources */,
 				13F315E629D7890D003770BD /* Preview Assets.xcassets in Resources */,
+				13E14ACE29DBD1E300D96760 /* Roboto-Bold.ttf in Resources */,
 				13F315E329D7890D003770BD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +332,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CSTV/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CSTV/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -333,6 +361,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CSTV/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CSTV/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
