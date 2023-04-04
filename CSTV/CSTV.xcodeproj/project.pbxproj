@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		133790CF29DCC9D100D5F30E /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 133790CE29DCC9D000D5F30E /* Roboto-Light.ttf */; };
+		133790D129DCCF6E00D5F30E /* TimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133790D029DCCF6E00D5F30E /* TimeFormatter.swift */; };
 		1383CD4329D79F2B00D60C66 /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1383CD4229D79F2B00D60C66 /* League.swift */; };
 		138A42EF29D9EB0C004E7631 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A42EE29D9EB0C004E7631 /* Team.swift */; };
 		138A42F129D9EB92004E7631 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138A42F029D9EB92004E7631 /* Player.swift */; };
 		13B03C1929D85F900096ECD3 /* Opponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B03C1829D85F900096ECD3 /* Opponents.swift */; };
 		13B03C1B29D863170096ECD3 /* Serie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B03C1A29D863170096ECD3 /* Serie.swift */; };
 		13B03C1D29D867500096ECD3 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B03C1C29D8674F0096ECD3 /* Match.swift */; };
+		13B03C2629D8A71F0096ECD3 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B03C2529D8A71F0096ECD3 /* RoundedCorner.swift */; };
+		13E14AC929DBC6E400D96760 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E14AC829DBC6E400D96760 /* ColorExtension.swift */; };
 		13E14ACD29DBD1E300D96760 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13E14ACA29DBD1E200D96760 /* Roboto-Regular.ttf */; };
 		13E14ACE29DBD1E300D96760 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13E14ACB29DBD1E300D96760 /* Roboto-Bold.ttf */; };
 		13E14ACF29DBD1E300D96760 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13E14ACC29DBD1E300D96760 /* Roboto-Medium.ttf */; };
@@ -26,13 +30,16 @@
 
 /* Begin PBXFileReference section */
 		133790CE29DCC9D000D5F30E /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		133790D029DCCF6E00D5F30E /* TimeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatter.swift; sourceTree = "<group>"; };
 		1383CD4229D79F2B00D60C66 /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
 		138A42EE29D9EB0C004E7631 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		138A42F029D9EB92004E7631 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		13B03C1829D85F900096ECD3 /* Opponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opponents.swift; sourceTree = "<group>"; };
 		13B03C1A29D863170096ECD3 /* Serie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serie.swift; sourceTree = "<group>"; };
 		13B03C1C29D8674F0096ECD3 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		13B03C2529D8A71F0096ECD3 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		13E14AC729DBC4D900D96760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		13E14AC829DBC6E400D96760 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		13E14ACA29DBD1E200D96760 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		13E14ACB29DBD1E300D96760 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		13E14ACC29DBD1E300D96760 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
@@ -56,6 +63,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13B03C2429D8A6DB0096ECD3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				13B03C2529D8A71F0096ECD3 /* RoundedCorner.swift */,
+				13E14AC829DBC6E400D96760 /* ColorExtension.swift */,
+				13E14AD129DBD2AF00D96760 /* FontExtension.swift */,
+				133790D029DCCF6E00D5F30E /* TimeFormatter.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		13E14AD029DBD1ED00D96760 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +107,7 @@
 				13E14AC729DBC4D900D96760 /* Info.plist */,
 				13F315DE29D78908003770BD /* CSTVApp.swift */,
 				13E14AD029DBD1ED00D96760 /* fonts */,
+				13B03C2429D8A6DB0096ECD3 /* Utils */,
 				13F315EE29D79D9D003770BD /* Models */,
 				13F315E029D78908003770BD /* ContentView.swift */,
 				13F315E229D7890D003770BD /* Assets.xcassets */,
@@ -196,12 +215,16 @@
 				138A42EF29D9EB0C004E7631 /* Team.swift in Sources */,
 				13F315E129D78908003770BD /* ContentView.swift in Sources */,
 				13B03C1D29D867500096ECD3 /* Match.swift in Sources */,
+				13B03C2629D8A71F0096ECD3 /* RoundedCorner.swift in Sources */,
 				13F315ED29D78F79003770BD /* Game.swift in Sources */,
 				138A42F129D9EB92004E7631 /* Player.swift in Sources */,
 				13B03C1B29D863170096ECD3 /* Serie.swift in Sources */,
+				13E14AD229DBD2AF00D96760 /* FontExtension.swift in Sources */,
 				13B03C1929D85F900096ECD3 /* Opponents.swift in Sources */,
 				1383CD4329D79F2B00D60C66 /* League.swift in Sources */,
+				133790D129DCCF6E00D5F30E /* TimeFormatter.swift in Sources */,
 				13F315DF29D78908003770BD /* CSTVApp.swift in Sources */,
+				13E14AC929DBC6E400D96760 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,7 +358,6 @@
 				INFOPLIST_FILE = CSTV/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -364,7 +386,6 @@
 				INFOPLIST_FILE = CSTV/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
