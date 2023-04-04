@@ -15,7 +15,9 @@
 		13B03C1929D85F900096ECD3 /* Opponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B03C1829D85F900096ECD3 /* Opponents.swift */; };
 		13B03C1B29D863170096ECD3 /* Serie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B03C1A29D863170096ECD3 /* Serie.swift */; };
 		13B03C1D29D867500096ECD3 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B03C1C29D8674F0096ECD3 /* Match.swift */; };
+		13B03C2029D8749B0096ECD3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B03C1F29D8749B0096ECD3 /* NetworkManager.swift */; };
 		13B03C2629D8A71F0096ECD3 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B03C2529D8A71F0096ECD3 /* RoundedCorner.swift */; };
+		13E14AC429DB918D00D96760 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E14AC329DB918D00D96760 /* ImageManager.swift */; };
 		13E14AC929DBC6E400D96760 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E14AC829DBC6E400D96760 /* ColorExtension.swift */; };
 		13E14ACD29DBD1E300D96760 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13E14ACA29DBD1E200D96760 /* Roboto-Regular.ttf */; };
 		13E14ACE29DBD1E300D96760 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13E14ACB29DBD1E300D96760 /* Roboto-Bold.ttf */; };
@@ -37,7 +39,9 @@
 		13B03C1829D85F900096ECD3 /* Opponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opponents.swift; sourceTree = "<group>"; };
 		13B03C1A29D863170096ECD3 /* Serie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serie.swift; sourceTree = "<group>"; };
 		13B03C1C29D8674F0096ECD3 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		13B03C1F29D8749B0096ECD3 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		13B03C2529D8A71F0096ECD3 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		13E14AC329DB918D00D96760 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		13E14AC729DBC4D900D96760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		13E14AC829DBC6E400D96760 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		13E14ACA29DBD1E200D96760 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
@@ -63,6 +67,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13B03C1E29D874830096ECD3 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				13B03C1F29D8749B0096ECD3 /* NetworkManager.swift */,
+				13E14AC329DB918D00D96760 /* ImageManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		13B03C2429D8A6DB0096ECD3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +121,7 @@
 				13F315DE29D78908003770BD /* CSTVApp.swift */,
 				13E14AD029DBD1ED00D96760 /* fonts */,
 				13B03C2429D8A6DB0096ECD3 /* Utils */,
+				13B03C1E29D874830096ECD3 /* Managers */,
 				13F315EE29D79D9D003770BD /* Models */,
 				13F315E029D78908003770BD /* ContentView.swift */,
 				13F315E229D7890D003770BD /* Assets.xcassets */,
@@ -213,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				138A42EF29D9EB0C004E7631 /* Team.swift in Sources */,
+				13E14AC429DB918D00D96760 /* ImageManager.swift in Sources */,
 				13F315E129D78908003770BD /* ContentView.swift in Sources */,
 				13B03C1D29D867500096ECD3 /* Match.swift in Sources */,
 				13B03C2629D8A71F0096ECD3 /* RoundedCorner.swift in Sources */,
@@ -220,6 +235,7 @@
 				138A42F129D9EB92004E7631 /* Player.swift in Sources */,
 				13B03C1B29D863170096ECD3 /* Serie.swift in Sources */,
 				13E14AD229DBD2AF00D96760 /* FontExtension.swift in Sources */,
+				13B03C2029D8749B0096ECD3 /* NetworkManager.swift in Sources */,
 				13B03C1929D85F900096ECD3 /* Opponents.swift in Sources */,
 				1383CD4329D79F2B00D60C66 /* League.swift in Sources */,
 				133790D129DCCF6E00D5F30E /* TimeFormatter.swift in Sources */,
