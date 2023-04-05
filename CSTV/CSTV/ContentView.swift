@@ -28,6 +28,9 @@ struct ContentView: View {
                         }
                     }
                 }.scrollIndicators(.never)
+                    .refreshable {
+                        viewModel.getHomeData()
+                    }
                     .onAppear {
                         UITableView.appearance().separatorStyle = .none
                         viewModel.getHomeData()
